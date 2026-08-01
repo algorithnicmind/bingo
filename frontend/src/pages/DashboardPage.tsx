@@ -1,4 +1,3 @@
-import { useNavigate } from "react-router-dom";
 import type { GameMode } from "../types";
 import "./DashboardPage.css";
 
@@ -10,8 +9,6 @@ const GAME_MODES: { mode: GameMode; label: string; desc: string }[] = [
 ];
 
 export default function DashboardPage() {
-  const navigate = useNavigate();
-
   const handleSelect = (mode: GameMode) => {
     // TODO: Navigate to game room with mode
     console.log("Selected mode:", mode);
